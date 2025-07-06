@@ -1,0 +1,7 @@
+{
+  "name": "myJournalApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
