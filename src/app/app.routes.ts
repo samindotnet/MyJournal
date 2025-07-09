@@ -7,7 +7,25 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full',
+  },
+  {
+    path: 'login',
+    loadComponent: () => import('./pages/login/login.page').then( m => m.LoginPage)
+  },
+  {
+    path: 'register',
+    loadComponent: () => import('./pages/register/register.page').then( m => m.RegisterPage)
+  },
+
+  {
+    path:'forgot-password',
+    loadComponent: () => import('./pages/forgot-password/forgot-password.page').then(m => m.ForgotPasswordPage)
+  },
+
+  {
+    path: 'journal-list',
+    loadComponent: () => import('./pages/journal-list/journal-list.page').then( m => m.JournalListPage)
   },
 ];

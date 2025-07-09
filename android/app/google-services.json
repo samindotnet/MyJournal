@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "774795454958",
+    "project_id": "myjournal-7c1bf",
+    "storage_bucket": "myjournal-7c1bf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774795454958:android:597f69f40d0c636f48c6ff",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDzaof_UYflyuJinipwHreKkgFKlT8ITo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

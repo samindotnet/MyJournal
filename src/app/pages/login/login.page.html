@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" formControlName="email" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position=" floating">Password</ion-label>
+      <ion-input type="password" formControlName="password" required></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" type="submit">Login</ion-button>
+    
+    <ion-button fill="clear" expand="block" (click)="goToForgotPassword()">Fogot Password?</ion-button>
+
+    <ion-button fill="clear" expand="block" (click)="goToRegister()">Create an Account</ion-button>
+  </form>
+</ion-content>

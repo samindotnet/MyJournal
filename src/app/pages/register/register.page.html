@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="registerForm" (ngSubmit)="register()">
+    
+    <ion-item>
+      <ion-input 
+      placeholder="Email" 
+      formControlName="email" 
+      type="email" label="Email" 
+      labelPlacement="floating">
+    </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input 
+      placeholder="Password"  
+      formControlName="password" 
+      type="password" label="Password" 
+      labelPlacement="floating">
+    </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input 
+      placeholder="Confirm Password" 
+      formControlName="confirmPassword" 
+      type="password" 
+      label="Confirm Password"
+      labelPlacement="floating">
+    </ion-input>
+    </ion-item>
+
+    <ion-text color="danger" *ngIf="registerForm.errors?.['mismatch'] && registerForm.touched">
+      <p class="ion-padding-start">Passwords do not match</p>
+    </ion-text>
+
+    <ion-button expand="block" type="submit" [disabled]="registerForm.invalid">Register</ion-button>
+  </form>
+  <ion-button fill="clear" routerLink="/login" (click)="goToLogin()">Already have an account? Login</ion-button>
+</ion-content>
